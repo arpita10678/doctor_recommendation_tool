@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Recommender</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Doctor Recommender System</h1>
+    <p>Speak your symptoms, and get a doctor recommendation:</p>
+
+    <form id="symptomForm">
+      <label for="symptoms">Your Symptoms:</label><br>
+      <input type="text" id="symptoms" name="symptoms" readonly>
+      <button type="button" id="micButton">🎤 Speak</button><br><br>
+      <button type="submit">Get Doctor Recommendation</button>
+    </form>
+
+    <div id="result">
+      <h3>Recommended Specialization: <span id="specialization"></span></h3>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
